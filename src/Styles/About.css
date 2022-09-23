@@ -1,0 +1,162 @@
+.about__container{
+    padding: 0 8vw;
+}
+
+.about__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 8vh;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.about__about{
+    margin-right: 10px;
+}
+.about__me{
+    color: rgb(120, 226, 255);
+}
+
+.about__desc{
+    font-size: 1.4rem;  
+    max-width: 1000px;  
+
+}
+.about__info-container{
+    border: 2px solid white;
+    width: 80vw;
+    padding: 2vh 2vw;
+    margin: 2vh 2vw;
+}
+.about__info-container:hover{
+    border-color:rgb(120, 226, 255) ;
+    transform: scale(1.09);
+}
+.about__info-left{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgb(120, 226, 255);
+}
+.about__info-right{
+    font-size: 1.1rem;
+}
+
+.about__skills-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+.about__skills-logo{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 2vh 0;
+}
+.about__skills-logo-p1{
+    margin-right: 10px;
+}
+
+.about__skills-logo-p2{
+    color: rgb(120, 226, 255);
+}
+
+.about__skills-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about__skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1vw;
+    border: 2px solid white;
+    padding: 1vh;
+    width: 150px;
+}
+.about__skill:hover{
+    color: rgb(120, 226, 255);
+    border-color: rgb(120, 226, 255);
+    transform: scale(1.09);
+}
+.about__skill-icon{
+    font-size: 2rem;
+}
+.about__right{
+    display: none;
+}
+.about__contact-btn{
+    background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 5px 12px;
+  margin: 20px ;
+  margin-left: 25vw;
+}
+.about__contact-btn:hover{
+    background-color: white;
+    color: black ;
+    font-weight: 500;
+}
+@media screen and (min-width: 1200px) {
+    .about__info-container{
+    border: 2px solid white;
+    width: fit-content;
+    padding: 2vh 2vw;
+    margin: 2vh 20vw;
+}
+    .about__container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 3vw;
+  }
+  .about__avatar {
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 10px;
+  }
+  .about__avatar:hover{
+    border: 4px solid rgb(120, 226, 255);
+  }
+  .about__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25vh;
+    width: 30vw;
+    margin-top: 12vh;
+    background-color: rgb(88, 88, 88);
+    height: 93vh;
+    border-top-left-radius: 50vw;
+    border-top-right-radius: 50vw;
+    margin: 0 2vw ;
+    margin-top: 7vh;
+  }
+.about__resume {
+  background-color: rgb(88, 88, 88);
+  color: white;
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 5px 12px;
+  margin: 20px;
+}
+.about__resume:hover{
+    background-color: white;
+    color: black ;
+    font-weight: bold;
+}
+.about__contact-btn{
+    margin-top: 8vh;
+  margin-left: 27vw;
+}
+}

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+.Navbar__container {
+  color: white;
+  
+}
+
+.Navbar__Logo {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+  /* font-weight: 600; */
+  font-family: 'Oswald', sans-serif;
+}
+.Navbar__Logo:hover{
+  color: white;
+  color: rgb(154, 223, 255);
+}
+.Navbar__link {
+  text-decoration: none;
+  color: white;
+  margin: 8px;
+  font-size: 1.1rem;
+}
+
+.Navbar__link:hover{
+  color: white;
+  transition: opacity 300ms, transform 300ms ;
+  color: rgb(132, 208, 244);
+  text-decoration:overline;
+  transform:translateY(-2px);
+}
+.Navbar__link.active{
+transition: opacity 300ms, transform 300ms;
+ transform:translateY(-2px);
+ font-weight: 400;
+ text-decoration: overline;
+ color: rgb(120, 226, 255);
+}
+
+@media screen and (min-width: 990px) {
+  .Navbar__Logo {
+  margin-right: 59vw;
+}
+.Navbar__link {
+  margin: 0 15px;
+}
+}

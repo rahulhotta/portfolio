@@ -1,0 +1,135 @@
+/* color: rgb(132, 208, 244) */
+a {
+  text-decoration: none;
+}
+.home__container {
+  display: flex;
+  flex-direction: column;
+}
+.home__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15vh;
+  width: 100vw;
+  background-color: rgb(88, 88, 88);
+  height: 60vh;
+  border-bottom-left-radius: 50vw;
+  border-bottom-right-radius: 50vw;
+}
+.home__avatar {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  border: 2px solid rgb(0, 0, 0);
+  margin: 10px;
+}
+.home__avatar:hover{
+  border: 4px solid rgb(132, 208, 244);
+}
+.home__social-icon {
+  margin: 10px;
+  font-size: 1.4rem;
+  color: white;
+
+}
+.home__social-icon:hover {
+  color: rgb(132, 208, 244);
+
+}
+
+.home__resume {
+  background-color: rgb(88, 88, 88);
+  color: white;
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 5px 12px;
+  margin: 20px;
+}
+.home__resume:hover{
+    background-color: white;
+    color: black ;
+    font-weight: bold;
+}
+.home__right {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+   text-align: center;
+}
+
+.home__my-position1 {
+    color: rgb(182, 182, 182);
+}
+.home__my-name2 {
+    font-size: 2.8rem;
+}
+.home__my-position2 {
+  color: rgb(182, 182, 182);
+  max-width: clamp(400px, 600px, 800px);
+  margin: 10px 20px;
+  
+}
+.home__work-btn {
+  background-color: black;
+  border-radius: 20px;
+  border: 2px solid white;
+  padding: 2px 10px;
+  color: white;
+  margin: 10px;
+}
+.home__Navlink {
+  text-decoration: none;
+  color: white;
+}
+.home__work-btn:hover{
+    background-color: white;
+    color: black ;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 780px) {
+  .home__container {
+    display: flex;
+    flex-direction: row;
+  }
+  .home__avatar {
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 10px;
+  }
+  .home__left {
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25vh;
+    width: 30vw;
+    background-color: rgb(88, 88, 88);
+    height: 99vh;
+    border-bottom-left-radius: 50vw;
+    border-bottom-right-radius: 50vw;
+  }
+  .home__right {
+    width: 70vw;
+    height: 99vh;
+  }
+  .home__work-btn{
+    margin: 30px;
+  }
+  
+}
+@media screen and (max-height: 700px){
+  .home__left{
+    display: none;
+  }
+  .home__right{
+    height: 100vh;
+    padding-top: 20vh ;
+  }
+}
