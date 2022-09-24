@@ -7,6 +7,8 @@ import notes from "../Images/Notes-app.jpg";
 
 import { NavLink } from "react-router-dom";
 
+import { motion } from "framer-motion";
+
 import CardUi from "./CardUi";
 
 import "../Styles/Work.css";
@@ -46,7 +48,13 @@ function Work() {
     },
   ];
   return (
-    <div className="workpage__container">
+    <motion.div
+      className="workpage__container"
+      initial={{ scaleX: 0 }}
+      animate={{ scaleX: 1 }}
+      exit={{ scaleX: 0 }}
+      transition={{ duration: 0.2 }}
+    >
       <div className="works__container">
         {worksData.map((work) => {
           return (
@@ -66,7 +74,7 @@ function Work() {
           </NavLink>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -1,12 +1,22 @@
-import React from 'react'
+import React from "react";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
-import '../Styles/CardUi.css'
+import "../Styles/CardUi.css";
 function CardUi(props) {
   return (
     <div className="card__container">
       <a href={props.Link} target="_blank" rel="noopener noreferrer">
-        <img src={props.img} alt="site" className="card__site-img" />
+        <LazyLoadImage
+          src={props.img}
+          alt="site"
+          className="card__site-img"
+          effect="blur"
+          key={props.img}
+          height={props.img.height}
+          width={props.img.width}
+          placeholderSrc={props.img}
+        />
       </a>
       <h2 className="card__heading">{props.title}</h2>
       <h6 className="card__desc">{props.description}</h6>
@@ -17,4 +27,4 @@ function CardUi(props) {
   );
 }
 
-export default CardUi
+export default CardUi;

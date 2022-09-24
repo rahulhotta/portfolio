@@ -3,6 +3,10 @@ import React from 'react'
 import { FaHtml5, FaCss3, FaReact, FaPython } from "react-icons/fa";
 import { SiJavascript, SiBootstrap } from "react-icons/si";
 
+import { motion } from "framer-motion";
+
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import Avatar from "../Images/avatar2.jpg";
 import Resume from "../Images/Rahul_Resume.pdf";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -15,7 +19,13 @@ import '../Styles/About.css';
 
 function About() {
   return (
-    <div className="about__container">
+    <motion.div
+      className="about__container"
+      initial={{ scaleX: 0 }}
+      animate={{ scaleX: 1 }}
+      exit={{ scaleX: 0 }}
+      transition={{ duration: 0.2 }}
+    >
       <div className="about__left">
         <div className="about__logo">
           <div className="about__about">ABOUT</div>
@@ -79,9 +89,21 @@ function About() {
             </div>
           </div>
         </div>
+        <NavLink to="/home" className="about__Navlink">
+          <button className="about__home-btn">Home</button>
+        </NavLink>
       </div>
       <div className="about__right">
-        <img src={Avatar} alt="Avatar" className="about__avatar" />
+        <LazyLoadImage
+          src={Avatar}
+          alt="Avatar"
+          className="about__avatar"
+          key={Avatar}
+          effect="blur"
+          placeholderSrc={Avatar}
+          height={Avatar.height}
+          width={Avatar.width}
+        />
         <h1 className="about__my-name1">Rahul Hotta</h1>
         <h4 className="about__my-position1">Web devepoler</h4>
         <div className="about__social">
@@ -112,7 +134,7 @@ function About() {
           <button className="about__resume">Download resume</button>
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

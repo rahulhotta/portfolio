@@ -92,16 +92,16 @@
 .about__right{
     display: none;
 }
-.about__contact-btn{
+.about__home-btn{
     background-color: black;
   color: white;
   border: 2px solid white;
   border-radius: 40px;
   padding: 5px 12px;
   margin: 20px ;
-  margin-left: 25vw;
+  margin-left: 32vw;
 }
-.about__contact-btn:hover{
+.about__home-btn:hover{
     background-color: white;
     color: black ;
     font-weight: 500;
@@ -155,7 +155,7 @@
     color: black ;
     font-weight: bold;
 }
-.about__contact-btn{
+.about__home-btn{
     margin-top: 8vh;
   margin-left: 27vw;
 }

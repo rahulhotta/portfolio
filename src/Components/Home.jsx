@@ -1,21 +1,39 @@
 import React from "react";
 
 import Avatar from "../Images/avatar.jpg";
-import Resume from "../Images/Rahul_Resume.pdf"
-import { FaLinkedinIn } from "react-icons/fa"; 
-import { VscGithubInverted } from "react-icons/vsc"; 
-import { FiMail } from "react-icons/fi"; 
-import { BsArrowRight } from "react-icons/bs"; 
+import Resume from "../Images/Rahul_Resume.pdf";
+import { FaLinkedinIn } from "react-icons/fa";
+import { VscGithubInverted } from "react-icons/vsc";
+import { FiMail } from "react-icons/fi";
+import { BsArrowRight } from "react-icons/bs";
 
 import { NavLink } from "react-router-dom";
+
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { motion } from "framer-motion";
 
 import "../Styles/Home.css";
 
 function Home() {
   return (
-    <div className="home__container">
+    <motion.div
+      className="home__container"
+      initial={{ scaleX: 0 }}
+      animate={{ scaleX: 1 }}
+      exit={{ scaleX: 0 }}
+      transition={{ duration: 0.2 }}
+    >
       <div className="home__left">
-        <img src={Avatar} alt="Avatar" className="home__avatar" />
+        <LazyLoadImage
+          src={Avatar}
+          alt="Avatar"
+          className="home__avatar"
+          key={Avatar}
+          effect="blur"
+          placeholderSrc={Avatar}
+          height={Avatar.height}
+          width={Avatar.width}
+        />
         <h1 className="home__my-name1">Rahul Hotta</h1>
         <h4 className="home__my-position1">Web devepoler</h4>
         <div className="home__social">
@@ -55,13 +73,13 @@ function Home() {
           improves the lives of those around me.
         </h4>
 
-        <NavLink to="/work" className="home__Navlink" >
+        <NavLink to="/work" className="home__Navlink">
           <button className="home__work-btn">
             My Works <BsArrowRight />
           </button>
         </NavLink>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
