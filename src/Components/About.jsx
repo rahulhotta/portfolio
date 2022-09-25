@@ -105,7 +105,7 @@ function About() {
           width={Avatar.width}
         />
         <h1 className="about__my-name1">Rahul Hotta</h1>
-        <h4 className="about__my-position1">Web devepoler</h4>
+        <h4 className="about__my-position1">Web developer</h4>
         <div className="about__social">
           <a
             href="https://www.linkedin.com/in/rahul-hotta-a58078203/"
