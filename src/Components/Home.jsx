@@ -35,7 +35,7 @@ function Home() {
           width={Avatar.width}
         />
         <h1 className="home__my-name1">Rahul Hotta</h1>
-        <h4 className="home__my-position1">Web devepoler</h4>
+        <h4 className="home__my-position1">Web developer</h4>
         <div className="home__social">
           <a
             href="https://www.linkedin.com/in/rahul-hotta-a58078203/"
