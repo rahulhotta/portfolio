@@ -9,7 +9,6 @@ import { BsArrowRight } from "react-icons/bs";
 
 import { NavLink } from "react-router-dom";
 
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
 
 import "../Styles/Home.css";
@@ -24,15 +23,10 @@ function Home() {
       transition={{ duration: 0.2 }}
     >
       <div className="home__left">
-        <LazyLoadImage
+        <img
           src={Avatar}
           alt="Avatar"
           className="home__avatar"
-          key={Avatar}
-          effect="blur"
-          placeholderSrc={Avatar}
-          height={Avatar.height}
-          width={Avatar.width}
         />
         <h1 className="home__my-name1">Rahul Hotta</h1>
         <h4 className="home__my-position1">Web developer</h4>

@@ -5,8 +5,6 @@ import { SiJavascript, SiBootstrap } from "react-icons/si";
 
 import { motion } from "framer-motion";
 
-import { LazyLoadImage } from "react-lazy-load-image-component";
-
 import Avatar from "../Images/avatar2.jpg";
 import Resume from "../Images/Rahul_Resume.pdf";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -94,15 +92,10 @@ function About() {
         </NavLink>
       </div>
       <div className="about__right">
-        <LazyLoadImage
+        <img
           src={Avatar}
           alt="Avatar"
           className="about__avatar"
-          key={Avatar}
-          effect="blur"
-          placeholderSrc={Avatar}
-          height={Avatar.height}
-          width={Avatar.width}
         />
         <h1 className="about__my-name1">Rahul Hotta</h1>
         <h4 className="about__my-position1">Web developer</h4>
